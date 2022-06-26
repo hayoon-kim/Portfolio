@@ -25,9 +25,9 @@
           <i class="fa-solid fa-bars"></i>
         </button>
         <ul class="header_nav_menu">
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Skills</li>
+          <li class="header_nav_menu_about" data-link="#about">About</li>
+          <li class="header_nav_menu_skills" data-link="#skills">Skills</li>
+          <li class="header_nav_menu_portfolio" data-link="#portfolio">Portfolio</li>
         </ul>
       </nav>
     </header>
@@ -35,15 +35,14 @@
     <main class="main">
       <article class="main_me">
         <img src="./img/me.png" alt="">
-        <p class="main_me_text">안녕하세요.</p>
-        <p class="main_me_text">
+        <p class="main_me_text">안녕하세요.<br>
           협업과 발전, 그리고 기본을 가장 중요시 생각하는 <br>
           프론트엔드 개발자 김하윤입니다.
         </p>
         <button class="main_me_btn">Resume</button>
       </article>
         
-      <article class="main_skill">
+      <article class="main_skill" id="skills">
         <section class="main_skill_edu">
           <p class="main_skill_edu_title">Education</p>
           <ul class="main_skill_edu_box">
@@ -75,7 +74,7 @@
       </article> 
     </main>
 
-    <article class="arti_pf">
+    <article class="arti_pf" id="portfolio">
       <h2>Portfolio</h2>
       <section class="arti_pf_cafe">
         <img src="./img/cafeinme.png" alt="">
@@ -85,11 +84,15 @@
           <p>자바를 기반으로 제작하였으며 
             기획, 프론트엔드 전반과 회원서비스 백엔드를 맡았습니다.
           </p>
+          <a href="https://youtu.be/H1Qtd8CgMBI" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+            Video
+          </a>
           <a href="./src/수료 프로젝트 발표 2팀(완성).pptx" download="김하윤_CafeInMe_Project">
             <i class="fa-solid fa-file-powerpoint"></i>
             기획PPT
           </a>
-          <a href="https://github.com/hayoon-kim/CafeInMe.git">
+          <a href="https://github.com/hayoon-kim/CafeInMe.git" target="_blank">
             <i class="fa-brands fa-github"></i>
             Code
           </a>
@@ -100,11 +103,11 @@
         <div class="arti_pf_youtube_box">
           <h3>Youtube popular</h3>
           <p>리액트로 제작한 유튜브 인기 차트를 검색하는 웹페이지.</p>
-          <a href="https://hayoon-kim.github.io/react_youtube/">
+          <a href="https://hayoon-kim.github.io/react_youtube/" target="_blank">
             <i class="fa-solid fa-video"></i>
             Demo
           </a>
-          <a href="https://github.com/hayoon-kim/react_youtube.git">
+          <a href="https://github.com/hayoon-kim/react_youtube.git" target="_blank">
             <i class="fa-brands fa-github"></i>
             Code
           </a>

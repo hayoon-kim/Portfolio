@@ -186,6 +186,38 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 1rem;
+  line-height: 1.2rem;
+  position: relative;
+}
+
+.main_me_text.active {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.2rem;
+  position: relative;
+  color: black;
+  background: url(./img/text_background.png);
+  background-size: contain;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: about 3s linear infinite;
+}
+
+@keyframes about {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 
 
@@ -201,7 +233,6 @@ body {
   left: 20%;
   cursor: pointer;
   z-index: 1;
-  box-shadow: 0.2px 0.2px 0px 0.2px #000000;
 }
 
 .main_me_btn:hover {
