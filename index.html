@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+  content="Portfolio"/>
+  <meta name="keywords" content="HTML, CSS, JS, Front-end, developer, portfolio">
+  <title>HAYOON's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c7df161a43.js" crossorigin="anonymous"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="background-container">
+    <header class="header">
+      <div class="header_me">
+        <p class="header_me_text">
+          I'M HAYOON
+        </p>
+      </div>
+      <nav class="header_nav">
+        <button class="header_nav_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="header_nav_menu">
+          <li>About</li>
+          <li>Portfolio</li>
+          <li>Skills</li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main">
+      <article class="main_me">
+        <img src="./img/me.png" alt="">
+        <p class="main_me_text">안녕하세요.</p>
+        <p class="main_me_text">
+          협업과 발전, 그리고 기본을 가장 중요시 생각하는 <br>
+          프론트엔드 개발자 김하윤입니다.
+        </p>
+        <button class="main_me_btn">Resume</button>
+      </article>
+        
+      <article class="main_skill">
+        <section class="main_skill_edu">
+          <p class="main_skill_edu_title">Education</p>
+          <ul class="main_skill_edu_box">
+            <li class="main_skill_edu_li"><img src="./img/class1.png" alt="영상 교육이수 이미지"></li>
+            <li class="main_skill_edu_li"><img src="./img/class2.png" alt="퍼블리싱 교육이수 이미지"></li>
+            <li class="main_skill_edu_li"><img src="./img/class3.png" alt="자바 교육이수 이미지"></li>
+          </ul>
+        </section>
+        <section class="main_skill_box">
+          <p class="main_skill_box_title">Tool</p>
+          <ul class="main_skill_box_list">
+            <li><img src="./img/html-5.png" alt=""></li>
+            <li><img src="./img/css-3.png" alt=""></li>
+            <li><img src="./img/javascript.png" alt=""></li>
+            <li><img src="./img/java.png" alt=""></li>
+            <li><img src="./img/oracle.png" alt=""></li>
+            <li><img src="./img/react.png" alt=""></li>
+          </ul>
+        </section>
+        <section class="main_skill_graphic">
+          <p class="main_skill_graphic_title">Graphic</p>
+          <ul class="main_skill_graphic_list">
+            <li><img src="./img/photoshop.png" alt=""></li>
+            <li><img src="./img/illustrator.png" alt=""></li>
+            <li><img src="./img/premiere-pro.png" alt=""></li>
+            <li><img src="./img/after-effects.png" alt=""></li>
+          </ul>
+        </section>
+      </article> 
+    </main>
+
+    <article class="arti_pf">
+      <h2>Portfolio</h2>
+      <section class="arti_pf_cafe">
+        <img src="./img/cafeinme.png" alt="">
+        <div class="arti_pf_cafe_box">
+          <h3>Cafe In Me</h3>
+          <p>내 조건을 선택하여 적합하는 카페를 찾아주는 웹서비스.</p>
+          <p>자바를 기반으로 제작하였으며 
+            기획, 프론트엔드 전반과 회원서비스 백엔드를 맡았습니다.
+          </p>
+          <a href="./src/수료 프로젝트 발표 2팀(완성).pptx" download="김하윤_CafeInMe_Project">
+            <i class="fa-solid fa-file-powerpoint"></i>
+            기획PPT
+          </a>
+          <a href="https://github.com/hayoon-kim/CafeInMe.git">
+            <i class="fa-brands fa-github"></i>
+            Code
+          </a>
+        </div>
+      </section>
+      <section class="arti_pf_youtube">
+        <img src="./img/youtube.png" alt="">
+        <div class="arti_pf_youtube_box">
+          <h3>Youtube popular</h3>
+          <p>리액트로 제작한 유튜브 인기 차트를 검색하는 웹페이지.</p>
+          <a href="https://hayoon-kim.github.io/react_youtube/">
+            <i class="fa-solid fa-video"></i>
+            Demo
+          </a>
+          <a href="https://github.com/hayoon-kim/react_youtube.git">
+            <i class="fa-brands fa-github"></i>
+            Code
+          </a>
+          
+        </div>
+      </section>
+    </article>
+
+    <footer class="footer">
+      <p>Copyrightⓒ2022 HAYOON All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
