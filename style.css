@@ -174,8 +174,38 @@ body {
   border-right: var(--primary-outline);
 }
 
+.main_me_box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .main_me img{
   width: 60%;
+}
+
+.main_me_btn {
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: var(--primary-outline);
+  top: 70%;
+  left: 68%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.main_me_btn:hover {
+  position: absolute;
+  top: 70.02%;
+  left: 67.98%;
+  box-shadow: 1.2px 1.2px 0px 1px #000000;
+  transition: all 0.2s ease-in;
 }
 
 .main_me_text {
@@ -220,27 +250,6 @@ body {
   }
 }
 
-
-.main_me_btn {
-  position: relative;
-  background-color: white;
-  width: 100px;
-  height: 40px;
-  font-size: 1rem;
-  border-radius: 2rem;
-  border: var(--primary-outline);
-  top: -20%;
-  left: 20%;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.main_me_btn:hover {
-  top: -20.02%;
-  left: 19.98%;
-  box-shadow: 1.2px 1.2px 0px 1px #000000;
-  transition: all 0.2s ease-in;
-}
 
 
 /*main_class*/
@@ -420,11 +429,6 @@ body {
 
 
 
-/*portfolio_cafeinme*/
-
-
-
-
 
 .footer {
   position: fixed;
@@ -445,6 +449,7 @@ body {
 
   .header {
     flex-direction: row;
+    height: 10vh;
   }
 
   .header_me {
@@ -469,21 +474,22 @@ body {
   .header_nav_btn {
     cursor: pointer;
     position: absolute;
-    right: 30px;
-    width: 40px;
-    height: 40px;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
     font-size: 2rem;
+    border-radius: 0.5rem;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
+    background-color: red;
   }
   
   .header_nav_btn:hover {
     color: white;
     border: var(--primary-outline);
-    border-radius: 0.5rem;
     background-color: black;
     font-size: 1.8rem;
     transition: all 0.2s;
@@ -529,17 +535,6 @@ body {
     border-bottom: var(--primary-outline);
   }
 
-  
-  .main_me_btn {
-    position: absolute;
-    top: 30%;
-    left: 65%;
-  }
-
-  .main_me_btn:hover {
-    top: 30.02%;
-    left: 64.98%;
-  }
 
   .main_info {
     width: 100%;
@@ -580,8 +575,6 @@ body {
     margin-top: 1rem;
   }
 
-
-
   .footer {
     position: relative;
     display: flex;
@@ -591,15 +584,40 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  .main_me_btn {
+@media (max-width: 500px) {
+
+  .header_nav {
     position: absolute;
-    top: 25%;
-    left: 65%;
+    width: 100%;
+    height: 10vh;
   }
 
-  .main_me_btn:hover {
-    top: 25.02%;
-    left: 64.98%;
+  .header_nav_menu.active {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    flex-direction: column;
+    right: 0;
+    left: 0;
+    padding: 0;
+    z-index: 3;
+    background-color: var(--primary-wh-color);
+    border-top: var(--primary-outline);
+  }
+  
+  .header_nav_menu li {
+    display: flex;
+    width: 100%;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    border-bottom: var(--primary-outline);
+  }
+
+  .header_nav_menu li:hover {
+    transform: none;
+    text-decoration: underline;
+    transition: all 0.2s ease-in;
   }
 }
